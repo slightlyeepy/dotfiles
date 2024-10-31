@@ -1,6 +1,6 @@
 # my dotfiles
 
-![screenshot](screenshot.png)
+![screenshot](screenshot-new.png)
 
 sway + waybar + alacritty + zsh
 
