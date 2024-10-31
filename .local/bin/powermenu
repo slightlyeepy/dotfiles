@@ -1,0 +1,15 @@
+#!/bin/sh
+
+choice="$(fzf --color='16,gutter:-1' --prompt=${GLYPH_PROMPT-# } <<EOF
+poweroff
+reboot
+exit sway
+panic
+EOF
+)"
+
+case "$choice" in
+	'poweroff') poweroff ;;
+	'reboot') reboot ;;
+	'exit sway') swaymsg exit ;;
+esac
